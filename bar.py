@@ -69,7 +69,7 @@ class Bar():
         mark += svg_wedge(dx, BAR_HEIGHT * self._scale + s,
                           dx + s,
                           (i * 2 + 1) * dy + s, (i * 2 + 2) * dy + s,
-                          '#FF0000', '#FFFFFF')
+                          '#00FF00', '#FFFFFF')
         mark += svg_footer()
         self.mark = Sprite(self._sprites, 0,
                            self._height,  # hide off bottom of screen
