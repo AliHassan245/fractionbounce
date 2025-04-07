@@ -72,7 +72,7 @@ class Bar():
                           '#00FF00', '#FFFFFF')
         mark += svg_footer()
         self.mark = Sprite(self._sprites, 0,
-                           self._height,  # hide off bottom of screen
+                           self._height - BAR_HEIGHT * self._scale,
                            svg_str_to_pixbuf(mark))
         self.mark.set_layer(1)
 
