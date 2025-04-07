@@ -75,7 +75,7 @@ class Bar():
                            self._height - BAR_HEIGHT * self._scale,
                            svg_str_to_pixbuf(mark))
         self.mark.set_layer(1)
-        f = self._fraction * self.bar.width()
+        f = 200
         target_x = int(f - self.mark.mark_width() / 2)  # f being the target x-position calculated elsewhere
         target_y = int(self.bar.bar_y() + self._mark_offset(f))
         self.mark.move((target_x, target_y))
