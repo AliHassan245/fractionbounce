@@ -99,7 +99,7 @@ class Bar():
                           color, '#FFFFFF')
         mark += svg_footer()
         self.mark.set_shape(svg_str_to_pixbuf(mark))
-        self.mark.show()
+        self.mark.set_visible(True)
       
 
     def mark_width(self):
