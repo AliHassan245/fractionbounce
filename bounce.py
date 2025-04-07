@@ -685,7 +685,7 @@ class Bounce():
         ball_width = self.ball.width()
         center_of_ball = ball_x + ball_width / 2
 
-        sensitivity = 20.0
+        sensitivity = 40.0
         diff = event.x - center_of_ball
         self._dx = (diff / sensitivity) * self._scale
 
