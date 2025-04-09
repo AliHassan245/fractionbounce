@@ -75,7 +75,7 @@ class Bar():
                            self._height - BAR_HEIGHT * self._scale,
                            svg_str_to_pixbuf(mark))
         self.mark.set_layer(1)
-        self.mark.set_layer(1)
+        self.mark.hide()
      
     def update_indicator(self, correct):
 
