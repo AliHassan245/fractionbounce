@@ -312,10 +312,7 @@ class Bounce():
     def pause(self):
         ''' Pause play when visibility changes '''
         if self._step_sid is not None:
-            try:
-              GLib.source_remove(self._step_sid)
-            except Exception as e:
-              pass
+            GLib.source_remove(self._step_sid)
             self._step_sid = None
 
         if self._bounce_sid is not None:
