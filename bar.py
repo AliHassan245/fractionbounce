@@ -75,6 +75,7 @@ class Bar():
                            self._height - BAR_HEIGHT * self._scale,
                            svg_str_to_pixbuf(mark))
         self.mark.set_layer(1)
+        self.mark.set_layer(1)
      
     def update_indicator(self, correct):
 
@@ -98,7 +99,7 @@ class Bar():
                           color, '#FFFFFF')
         mark += svg_footer()
         self.mark.set_shape(svg_str_to_pixbuf(mark))
-        
+        self.mark.restore()
       
 
     def mark_width(self):
